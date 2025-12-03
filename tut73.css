@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    border: 2px solid white;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 7px;
+
+}
+
+.img img {
+    width: 200px;
+    border-radius: 7px;
+    margin-right: 15px;
+
+}
+
+.img {
+    position: relative;
+
+}
+
+
+
+.text h1,
+p {
+    padding: 2px;
+    color: white;
+
+}
+
+.capsul {
+    position: absolute;
+    bottom: 4px;
+    z-index: 10;
+    right: 5px;
+    background-color: rgba(11, 1, 1, 0.848);
+    color: white;
+    opacity: 0.9;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}

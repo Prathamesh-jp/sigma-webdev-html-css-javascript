@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing in css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            /* font-size: 18px; */
+        }
+
+        .container p{
+            font-size: 2em;
+            width: 50%;
+        }
+
+        .mycont {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            column-rule: black;
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <img height="500px" src="image5.png">
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        this is the class
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, corrupti laboriosam maiores quibusdam
+        consectetur adipisci magni unde quisquam. Aliquid illum, a et voluptates quos iure consequatur odit aperiam
+        dolorum quam ducimus beatae. Corporis, repellendus. Expedita illum laborum culpa atque doloremque nisi
+        laudantium accusantium molestiae cum consectetur accusamus consequatur nemo unde voluptatum incidunt veniam,
+        repudiandae eligendi aperiam odio numquam id voluptatibus voluptas. Amet ex nesciunt, blanditiis exercitationem
+        voluptas, labore sequi totam repellat velit ea distinctio molestias, veritatis temporibus alias? Aliquid dolorem
+        aliquam alias, nulla quos mollitia sunt amet quasi ad voluptates deserunt. Eos reiciendis vero impedit totam
+        accusamus dignissimos consequatur!
+    </div>
+    <div class="mycont">
+        this another class
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventbubbling</title>
+    <style>
+        .chiled {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .chiledcontainor {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .containor {
+            background-color: rgb(227, 227, 28);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containor">
+        <div class="chiledcontainor">
+            <div class="chiled">
+                i am a chiled
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".chiled").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("chiled was clicked")
+        })
+
+        document.querySelector(".containor").addEventListener("click", (e) => {
+             e.stopPropagation()
+            alert("container was clicked")
+        })
+
+        document.querySelector(".chiledcontainor").addEventListener("click", (e) => {
+             e.stopPropagation()
+            alert("chiledcontainor was clicked")
+        })
+
+        setInterval(() => {
+            document.querySelector(".containor").style.backgroundColor = "red";
+        }, 3000);
+    </script>
+</body>
+
+</html>

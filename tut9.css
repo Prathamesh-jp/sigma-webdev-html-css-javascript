@@ -1,0 +1,10 @@
+.red{
+ color: hwb(12 0% 0%);
+}
+.bgyellow{
+    background-color: lch(96.83% 96.94 103.84);
+}
+
+#firstdiv{
+    background-color: yellow;
+}
